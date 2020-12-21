@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(./космос.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin: 0;
+  font-family: sans-serif;
+}
+.title {
+  text-transform: uppercase;
+  color: SlateBlue;
+  white-space: nowrap;
+}
+.new-task {
+  padding: 10px;
+  outline: none;
+  border: 3px solid pink;
+  background-color: whitesmoke;
+  color: pink;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.new-task::placeholder {
+  color: slateblue;
+  font-weight: bold;
+}
+.new-task:focus {
+  border: 3px solid slateblue;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid pink;
+  color: pink;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  -webkit-box-shadow: 4px 4px 89px 56px rgba(255, 0, 225, 0.2);
+-moz-box-shadow: 4px 4px 89px 56px rgba(255, 0, 225, 0.2);
+box-shadow: 4px 4px 89px 56px rgba(255, 0, 225, 0.2);
+
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 10px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid pink;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.task:hover {
+  border-color: slateblue;
+}
+.task .complete {
+  text-decoration: line-through;
+}
+.task-text {
+  max-width: 100%;
+  white-space: wrap;
+}
+
+.delete-task {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: pink;
+  border: 3px solid SlateBlue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.delete-task:hover {
+  border: none;
+  background-color: SlateBlue;
+  color: pink;
+}
+.mark {
+  background-color: blanchedalmond;
+  cursor: pointer;
+  outline: none;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
